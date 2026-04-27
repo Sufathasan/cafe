@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8B0000;
+  --color-secondary: #006A4E;
+  --color-accent: #D4AF37;
+  --color-cream: #FCFAF2;
+  --color-dark: #1A1A1A;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream text-dark font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+}
+
+@layer utilities {
+  .border-gold {
+    @apply border-[#D4AF37];
+  }
+  .bg-emerald {
+    @apply bg-[#006A4E];
+  }
+  .text-maroon {
+    @apply text-[#8B0000];
+  }
+  .bg-maroon {
+    @apply bg-[#8B0000];
+  }
+}
